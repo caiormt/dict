@@ -199,6 +199,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <testFramework>JUNIT5</testFramework>
+                    <failOnNoContracts>false</failOnNoContracts>
                 </configuration>
             </plugin>
             <plugin>

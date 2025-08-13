@@ -73,7 +73,7 @@ jobs:
           cache: "maven"
 
       - name: Download artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: build-output
           path: target/

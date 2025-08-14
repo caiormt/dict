@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -12,19 +13,27 @@
     <artifactId>dict</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>dict</name>
-    <description>dict</description>
-    <url/>
+    <description>Opinionated Spring Boot App</description>
+    <url>https://github.com/caiormt/dict</url>
     <licenses>
-        <license/>
+        <license>
+            <name>Apache 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
     </licenses>
     <developers>
-        <developer/>
+        <developer>
+            <id>caiormt</id>
+            <name>Caio Riyousuke Miyada Tokunaga</name>
+            <url>https://github.com/caiormt</url>
+            <timezone>America/Sao_Paulo</timezone>
+        </developer>
     </developers>
     <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
+        <connection>scm:git:https://github.com/caiormt/dict.git</connection>
+        <developerConnection>scm:git:https://github.com/caiormt/dict.git</developerConnection>
+        <tag>main</tag>
+        <url>https://github.com/caiormt/dict/tree/${project.scm.tag}</url>
     </scm>
     <properties>
         <java.version>21</java.version>

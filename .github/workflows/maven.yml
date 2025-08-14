@@ -109,6 +109,6 @@ jobs:
           restore-keys: ${{ runner.os }}-sonar
 
       - name: Analyze with Maven
-        run: ./mvnw -T 1C clean verify sonar:sonar -Dsonar.projectKey=caiormt_dict
+        run: ./mvnw -T 1C clean verify sonar:sonar -Dsonar.projectKey=caiormt_dict --file pom.xml
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

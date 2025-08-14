@@ -83,3 +83,32 @@ jobs:
 
       - name: Test with Maven
         run: ./mvnw -T 1C test-compile test --file pom.xml
+
+  analyze:
+   runs-on: ubuntu-latest
+   needs:
+       - test
+   steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: "corretto"
+          java-version: "21"
+          cache: "maven"
+
+      - name: Cache SonarQube packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+
+      - name: Analyze with Maven
+        run: ./mvnw -T 1C clean verify sonar:sonar -Dsonar.projectKey=caiormt_dict
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

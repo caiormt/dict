@@ -52,6 +52,9 @@ jobs:
           java-version: "21"
           cache: "maven"
 
+      - name: Check Style Guide
+        run: ./mvnw -T 1C validate --file pom.xml
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:

@@ -50,7 +50,7 @@
         <checkstyle.version>11.0.1</checkstyle.version>
 
         <jspecify.version>1.0.0</jspecify.version>
-        <errorprone.version>2.41.0</errorprone.version>
+        <errorprone.version>2.42.0</errorprone.version>
         <nullaway.version>0.12.9</nullaway.version>
 
         <jacoco.version>0.8.13</jacoco.version>

@@ -51,7 +51,7 @@
 
         <jspecify.version>1.0.0</jspecify.version>
         <errorprone.version>2.44.0</errorprone.version>
-        <nullaway.version>0.12.10</nullaway.version>
+        <nullaway.version>0.12.13</nullaway.version>
 
         <jacoco.version>0.8.14</jacoco.version>
 
